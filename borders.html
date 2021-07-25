@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Primary Meta Tags -->
+      <title>CssGENX || Border Generator</title>
+      <meta name="title" content="CssGENX || Border Generator">
+      <meta name="description" content="CssGENX is a collection of CSS tools for beginner developers. it can be used to get css codes snippets easily. Tools include borders, Glassmorphism UI , Shadows generators.">
+      <link rel="shortcut icon" href="assets/img/favicon.ico">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://anicode.in/cssgenx">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:title" content="CssGENX || Border Generator">
+      <meta property="og:description" content="CssGENX is a collection of CSS tools for beginner developers. it can be used to get css codes snippets easily. Tools include borders, Glassmorphism UI , Shadows generators.">
+      <meta property="og:image" content="assets/img/9.PNG">
+      <!--    meta viewport for screen size configuration       -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--   Stylesheet css path        -->
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <body>
+      <!--  Toast notification starts  -->
+      <div id="toast">
+         <div id="img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+               <circle cx="12" cy="12" r="9" />
+               <line x1="12" y1="8" x2="12.01" y2="8" />
+               <polyline points="11 12 12 12 12 16 13 16" />
+            </svg>
+         </div>
+         <div id="desc"></div>
+      </div>
+      <!-- === Code space copy === -->
+      <div class="code-container" id="codecopy">
+         <div class="code-box">
+            <div class="code-head">
+               Generated Code: 
+               <svg xmlns="http://www.w3.org/2000/svg" id="cancel-codecopy"  width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M10 10l4 4m0 -4l-4 4" />
+               </svg>
+            </div>
+            <pre id="generated-code" class="code-space"><code id="copyoutput">ajah</code></pre>
+            <div class="button-container">
+               <button onclick="copycode()">
+                  <svg style="margin-right: 15px;" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="2em" height="2em" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                     <rect x="8" y="8" width="12" height="12" rx="2" />
+                     <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                  </svg>
+                  Copy to clipboard!
+               </button>
+            </div>
+         </div>
+      </div>
+      <!-- === Settings Popup === -->
+      <div class="settings-container" id="popm">
+         <div class="settings-popup">
+            <div class="pop-head">
+               <p class="pop-heading">CSSGENX Settings:</p>
+               <svg id="pop-close" xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M10 10l4 4m0 -4l-4 4" />
+               </svg>
+            </div>
+            <div class="pop-item">
+               Animations   
+               <label class="switch">
+                  <input id="anim" type="checkbox" checked/>    
+                  <div></div>
+               </label>
+            </div>
+            <div class="pop-item">
+               Tooltips (hints)  
+               <label class="switch">
+                  <input id="hints" type="checkbox" checked/>    
+                  <div></div>
+               </label>
+            </div>
+         </div>
+      </div>
+      <!-- === Header === -->
+      <div class="slideIn" id="header">
+         <svg xmlns="http://www.w3.org/2000/svg" id="menu" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M6 17.6l-2 -1.1v-2.5" />
+            <path d="M4 10v-2.5l2 -1.1" />
+            <path d="M10 4.1l2 -1.1l2 1.1" />
+            <path d="M18 6.4l2 1.1v2.5" />
+            <path d="M20 14v2.5l-2 1.12" />
+            <path d="M14 19.9l-2 1.1l-2 -1.1" />
+            <line x1="12" y1="12" x2="14" y2="10.9" />
+            <line x1="18" y1="8.6" x2="20" y2="7.5" />
+            <line x1="12" y1="12" x2="12" y2="14.5" />
+            <line x1="12" y1="18.5" x2="12" y2="21" />
+            <path d="M12 12l-2 -1.12" />
+            <line x1="6" y1="8.6" x2="4" y2="7.5" />
+         </svg>
+         <span id="title">CssGENX - Border Generator </span>
+         <svg onclick="window.location.href = 'https://github.com/abhiprojectz/cssgenx'" xmlns="http://www.w3.org/2000/svg" class="giticon" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+         </svg>
+         <svg xmlns="http://www.w3.org/2000/svg" id="about"  width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+            <circle cx="12" cy="12" r="3" />
+         </svg>
+      </div>
+      <!-- === Pages Navigation === -->
+      <button class="page-btn" id="previous" onclick="window.location.href = 'shadow.html'">
+         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 12h-15" />
+            <path d="M6 9l-3 3l3 3" />
+            <path d="M21 9l-3 3l3 3" />
+         </svg>
+      </button>
+      <button class="page-btn" id="next" onclick="window.location.href = 'index.html'">
+         <svg xmlns="http://www.w3.org/2000/svg"  width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 15l3 -3l-3 -3" />
+            <path d="M3 15l3 -3l-3 -3" />
+            <line x1="6" y1="12" x2="21" y2="12" />
+         </svg>
+      </button>
+      <!-- === Target display === -->
+      <div id="dis-target" class="display-container scaleIn">
+         <div class="display-c">
+            <div id="disbox" class="box"></div>
+         </div>
+      </div>
+      <!-- === Tools Navigation === -->
+      <div id="tools-nav" class="panel-container bottomfade">
+         <div class="wrapper">
+            <div class="panel1">
+               <ul id="ccc">
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-width" xmlns="http://www.w3.org/2000/svg" class="sicon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M17 3l4 4l-14 14l-4 -4z" />
+                           <path d="M16 7l-1.5 -1.5" />
+                           <path d="M13 10l-1.5 -1.5" />
+                           <path d="M10 13l-1.5 -1.5" />
+                           <path d="M7 16l-1.5 -1.5" />
+                        </svg>
+                        <input type="range" min="0" max="50" id="width" value="0"/>
+                     </div>
+                     <!-- Border width: -->
+                  </li>
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-topL" class="sicon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M4 12v-4a4 4 0 0 1 4 -4h4" />
+                           <line x1="16" y1="4" x2="16" y2="4.01" />
+                           <line x1="20" y1="4" x2="20" y2="4.01" />
+                           <line x1="20" y1="8" x2="20" y2="8.01" />
+                           <line x1="20" y1="12" x2="20" y2="12.01" />
+                           <line x1="4" y1="16" x2="4" y2="16.01" />
+                           <line x1="20" y1="16" x2="20" y2="16.01" />
+                           <line x1="4" y1="20" x2="4" y2="20.01" />
+                           <line x1="8" y1="20" x2="8" y2="20.01" />
+                           <line x1="12" y1="20" x2="12" y2="20.01" />
+                           <line x1="16" y1="20" x2="16" y2="20.01" />
+                           <line x1="20" y1="20" x2="20" y2="20.01" />
+                        </svg>
+                        <input min="0" max="50" type="range" id="topL" value="0"/>
+                     </div>
+                     <!-- Top left:  -->
+                  </li>
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-topR" class="sicon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M5 5h6a8 8 0 0 1 8 8v6" />
+                        </svg>
+                        <input min="0" max="50" type="range" id="topR" value="0"/>
+                     </div>
+                     <!-- Top right:  -->
+                  </li>
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-Bright" class="sicon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M19 19h-6a8 8 0 0 1 -8 -8v-6" />
+                        </svg>
+                        <input type="range" min="0" max="50" id="Bright" value="0"/>
+                     </div>
+                     <!-- Bottom left :  -->
+                  </li>
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-Bl" class="sicon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M19 5v6a8 8 0 0 1 -8 8h-6" />
+                        </svg>
+                        <input type="range" min="0" max="50" id="Bl" value="0"/>
+                     </div>
+                     <!-- Bottom right:  -->
+                  </li>
+                  <li>
+                     <div class="panel-sp">
+                        <svg id="tip-full" class="sicon" xmlns="http://www.w3.org/2000/svg"  width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                           <rect x="4" y="4" width="16" height="16" rx="2" />
+                           <line x1="4" y1="12" x2="20" y2="12" />
+                           <line x1="12" y1="4" x2="12" y2="20" />
+                        </svg>
+                        <input type="range" min="0" max="50" id="full" value="0"/>
+                     </div>
+                     <!-- Full corners:   -->
+                  </li>
+               </ul>
+            </div>
+            <div class="panel2">
+               <div class="color-container"><span id="colorval">#uehdkj</span> <input class="colorc" onchange="updateBorderColor()" type="color" value="#ff0000" id="Bcolor"/></div>
+               <section class="dropsel">
+                  <span class="iosr">Border style</span>
+                  <select id="borstyle" class="selectbor" onchange="updateBorder()">
+                     <option value="Solid">Solid</option>
+                     <option value="Dashed">Dashed</option>
+                     <option value="dotted">dotted</option>
+                     <option value="double">double</option>
+                     <option value="inset">inset</option>
+                     <option value="outset">outset</option>
+                     <option value="ridge">ridge</option>
+                     <option value="inherit">inherit</option>
+                     <option value="hidden">hidden</option>
+                     <option value="groove">groove</option>
+                     <option value="none">none</option>
+                  </select>
+               </section>
+            </div>
+            <div class="panel3">
+               <input onclick="copy(this.id)" class="output" id="data-border" value="Code will appear here..." type="text">
+               <input onclick="copy(this.id)" class="output" id="datborder" value="Code will appear here..." type="text">
+               <p id="hint">*Tap to copy!</p>
+               <div class="p3-span">
+                  <span class="csave" id="result" type="border">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 8 3 12 7 16" />
+                        <polyline points="17 8 21 12 17 16" />
+                        <line x1="14" y1="4" x2="10" y2="20" />
+                     </svg>
+                  </span>
+                  <span class="csave" id="random">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dice" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#651FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <circle cx="8.5" cy="8.5" r=".5" fill="currentColor" />
+                        <circle cx="15.5" cy="8.5" r=".5" fill="currentColor" />
+                        <circle cx="15.5" cy="15.5" r=".5" fill="currentColor" />
+                        <circle cx="8.5" cy="15.5" r=".5" fill="currentColor" />
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- === Tooltip . Tippy scripts === -->
+      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+      <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+   </body>
+   <!-- ==== Inserting all external js scrips  -->
+   <script src="assets/js/base.js"></script>
+   <script src="assets/js/border.js"></script>
+</html>
