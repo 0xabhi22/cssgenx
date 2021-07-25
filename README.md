@@ -12,6 +12,10 @@ As a web developer students, we face css a bit hard to master. Many a times we g
 
 CssGENX contains Beginner friendly css tools generator such as shadow, border and GlassMorphismUI generator too to make your projects looks smart & Cool with minimal efforts and yes making learning a enjoyable stuff too!
 
+# Try it out
+
+[CSSGENX](https://anicode.in/cssgenx/)
+
 # Feature 
 
 + Highly customizable
