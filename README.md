@@ -25,10 +25,6 @@ CssGENX contains Beginner friendly css tools generator such as shadow, border an
 + Super Fast
 + Personalized accordingly
 
-# Something special ?
-
-Yes , it was created in a hackathon MLH HACKY BIRTHDAY 2021
-
 # Stacks used
 
 + Pure CSS , JS & HTML 
